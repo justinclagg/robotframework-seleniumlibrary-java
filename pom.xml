@@ -10,7 +10,7 @@
 
 	<groupId>com.github.markusbernhardt</groupId>
 	<artifactId>robotframework-selenium2library-java</artifactId>
-	<version>3.5.3.0-SNAPSHOT</version>
+	<version>3.5.2.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Robot Framework :: Selenium2Library</name>
@@ -26,7 +26,8 @@
 		<xml.doclet.version>1.0.5</xml.doclet.version>
 		<robotframework.version>3.0.2</robotframework.version>
 		<robotframework.maven.plugin.version>1.4.7</robotframework.maven.plugin.version>
-		<selenium.version>3.5.3</selenium.version>
+		<appium.java.client.version>5.0.1</appium.java.client.version>
+		<selenium.version>3.5.2</selenium.version>
 		<keywords.class>Selenium2Library</keywords.class>
 	</properties>
 
@@ -100,7 +101,7 @@
 		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
-			<version>5.0.1</version>
+			<version>${appium.java.client.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -233,7 +234,7 @@
 				<!-- Build the fat jar with all dependencies -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.6</version>
+				<version>3.1.0</version>
 				<configuration>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
